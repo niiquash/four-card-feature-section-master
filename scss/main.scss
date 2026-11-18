@@ -12,7 +12,8 @@ body {
 
 .heading {
   margin-top: 56px;
-  padding-inline: 30px;
+  margin-inline: 30px;
+  max-width: 540px;
   text-align: center;
 
   &__main-heading {
@@ -32,7 +33,7 @@ body {
 .cards {
   margin-top: 60px;
   margin-bottom: 76px;
-  padding-inline: 30px;
+  // padding-inline: 30px;
 
   display: grid;
   grid-template-columns: 1 minmax(0, 1fr);
@@ -78,5 +79,48 @@ body {
 
   &__calculator {
     border-top: 6px solid $color-blue;
+  }
+}
+
+@include tablet {
+  .heading {
+    margin-top: 80px;
+
+    &__main-heading {
+      @include text-preset-2;
+    }
+
+    &__sub-heading {
+      @include text-preset-1;
+    }
+
+    &__intro-paragraph {
+      @include text-preset-4;
+    }
+  }
+
+  .cards {
+    margin-top: 74px;
+    margin-bottom: 80px;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 660px;
+
+    &__supervisor {
+      grid-column: span 2 / 3;
+    }
+
+    &__team-builder {
+      grid-column: span 2/4;
+      grid-row: 1;
+    }
+
+    &__karma {
+      grid-column: span 2 / 5;
+    }
+
+    &__calculator {
+      grid-column: span 2 / 4;
+    }
   }
 }

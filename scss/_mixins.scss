@@ -55,3 +55,9 @@
   line-height: $line-height-160;
   letter-spacing: $letter-spacing-normal;
 }
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
