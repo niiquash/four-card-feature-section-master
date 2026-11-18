@@ -35,6 +35,13 @@
   letter-spacing: $letter-spacing-normal;
 }
 
+@mixin mobile-text-preset-4 {
+  font-size: $font-size-15;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-140;
+  letter-spacing: $letter-spacing-medium;
+}
+
 @mixin text-preset-4 {
   font-size: $font-size-15;
   font-weight: $font-weight-regular;

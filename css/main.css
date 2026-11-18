@@ -45,14 +45,27 @@ body {
 }
 
 .heading {
+  padding-inline: 30px;
   text-align: center;
 }
 .heading__main-heading {
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   font-weight: 200;
   line-height: 1.4;
   letter-spacing: 0.25px;
-  color: #4d4f62;
+}
+.heading__sub-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.25px;
+}
+.heading__intro-paragraph {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
 }
 
 /*# sourceMappingURL=main.css.map */

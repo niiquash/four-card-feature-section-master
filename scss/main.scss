@@ -11,10 +11,19 @@ body {
 }
 
 .heading {
+  padding-inline: 30px;
   text-align: center;
 
   &__main-heading {
     @include mobile-text-preset-2;
-    color: $color-grey-500;
+  }
+
+  &__sub-heading {
+    @include mobile-text-preset-1;
+  }
+
+  &__intro-paragraph {
+    margin-top: $spacing-200;
+    @include mobile-text-preset-4;
   }
 }
