@@ -37,7 +37,7 @@ textarea {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,6 +45,7 @@ body {
 }
 
 .heading {
+  margin-top: 56px;
   padding-inline: 30px;
   text-align: center;
 }
@@ -66,6 +67,53 @@ body {
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.1px;
+}
+
+.cards {
+  margin-top: 60px;
+  margin-bottom: 76px;
+  padding-inline: 30px;
+  display: grid;
+  grid-template-columns: 1 minmax(0, 1fr);
+  gap: 2rem;
+}
+.cards__card {
+  max-width: 350px;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 15px 30px -11px rgba(131, 167, 210, 0.5019607843);
+}
+.cards__heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+.cards__text {
+  margin-top: 6px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+.cards__icon {
+  margin-top: 2rem;
+  justify-self: flex-end;
+}
+.cards__supervisor {
+  border-top: 6px solid #44d3d2;
+}
+.cards__team-builder {
+  border-top: 6px solid #ea5454;
+}
+.cards__karma {
+  border-top: 6px solid #fcae4a;
+}
+.cards__supervisor {
+  border-top: 6px solid #44d3d2;
+}
+.cards__calculator {
+  border-top: 6px solid #549ef2;
 }
 
 /*# sourceMappingURL=main.css.map */
