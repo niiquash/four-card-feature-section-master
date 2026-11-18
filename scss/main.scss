@@ -1,0 +1,20 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "global";
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+
+  &__main-heading {
+    @include mobile-text-preset-2;
+    color: $color-grey-500;
+  }
+}
